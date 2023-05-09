@@ -113,8 +113,12 @@ class _homeScreenState extends State<homeScreen>
                         padding: const EdgeInsets.all(15),
                         child: Transform.rotate(
                             angle: animationController!.value*2*pi,
-                            child: Image.network(
-                                "${controller.modelList[index].Image}")),
+                            child: Container(
+                              height: 130,
+                              width: 130,
+                              child: Image.asset(
+                                  "${controller.modelList[index].Image}"),
+                            )),
                       ),
                     ),
                   ],

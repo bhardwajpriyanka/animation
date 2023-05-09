@@ -48,12 +48,12 @@ class _DetailsState extends State<Details> with SingleTickerProviderStateMixin {
                 child: Transform.rotate(
                     angle: animationController!.value * 2 * pi,
                     child:
-                    Image.network("${controller.modelList[index].Image}")),
+                    Image.asset("${controller.modelList[index].Image}")),
               ),
             ),
             Expanded(
               child: Padding(
-                padding: const EdgeInsets.all(10),
+                padding: const EdgeInsets.all(20),
                 child: Container(
                   alignment: Alignment.center,
                   child: Column(
@@ -81,7 +81,7 @@ class _DetailsState extends State<Details> with SingleTickerProviderStateMixin {
                         ),
                       ),
                       SizedBox(
-                        height: 5,
+                        height: 2,
                       ),
                       Center(
                         child: Text(
